@@ -435,11 +435,12 @@ main{
   gap: 10px;
 }
 .brandNameLogo div{
-  background-color: #b30e0e83;
+  /* background-color: #b30e0e83; */
   height: 100%;
   width: 600px;
   background-image: url(brandnamelogo.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 
@@ -492,7 +493,7 @@ footer p{
 
 @media (max-width: 2560px){
   .containerMargin{
-      max-width: 1850px;
+      max-width: 1520px;
       /* background-color: rgb(243, 227, 4); */
   }
   .nav2{
@@ -504,12 +505,19 @@ footer p{
     
     height: 320px;
     }
+
+    .brandNameLogo div{
+      width: 640px;
+      background-position: -10px;
+      
+      
+    }
 }
 
 
 @media (max-width: 1440px){
   .containerMargin{
-      max-width: 1354px;
+      max-width: 1154px;
       /* background-color: rgb(72, 255, 0); */
   }
   .containerMargin2{
@@ -584,6 +592,14 @@ footer p{
       .picshoes{
         height: 70px;
         background-position-y:-45px ;
+      }
+
+      .brandNameLogo div{
+        width: 440px;
+        background-position: -10px;
+        height: 120px;
+        
+        
       }
   
 }
@@ -695,12 +711,17 @@ font-size: 15px;
     display: flex;
     
   }
+
+  .moreInfoPageforMobile button{
+    width: 300px;
+    
+  }
   
   
 }
 @media (max-width: 425px){
   .containerMargin{
-      max-width: 375px;
+      max-width: 100%;
       /* background-color: rgb(24, 94, 99); */
   }
   .top h1{
@@ -747,7 +768,7 @@ font-size: 10px;
 }
 @media (max-width: 320px){
   .containerMargin{
-      max-width: 320px;
+      max-width: 100%;
       /* background-color: rgb(146, 1, 243); */
   }
   .top h1{
