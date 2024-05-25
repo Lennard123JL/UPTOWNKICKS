@@ -1537,7 +1537,7 @@ footer p {
     font-size: 15px;
   }
   .filterAndSortSide {
-    display: none;
+    /* display: none; */
   }
 
   main {
