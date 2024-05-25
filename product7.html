@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html class="htmlItemPage" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="homepage.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
+    <title>Uptown Kicks MNL</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="searchEngine.js">
+    <link rel="stylesheet" href="homepage.css" />
+    <link rel="stylesheet" href="style/productpage.css" />
+    <link rel="stylesheet" href="mediaQueries/mediaMobileFirst.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta property="og:title" content="UPTOWN KICKS MNL" />
+    <meta
+      property="og:description"
+      content="We Sell Legit/Original Sneakers at a budget friendly. All Items posted are below Srp!"
+    />
+    <meta property="og:image" content="thumbnail.jpg" />
+    <meta property="og:url" content="https://uptownkickmnl.store/Home/" />
+    <meta property="og:type" content="website" />
+</head>
+<body>
+    <div class="containerMargin">
+        <header>
+          <!-- NAVIGATION DESKTOP -->
+          <nav class="nav1">
+            <h1 class="logoName">
+              <div>UPTOWN</div>
+              <div><span>KICKS</span> MNL</div>
+            </h1>
+  
+            <ul class="navigations">
+              <li>
+                <button class="homeBtn navBtn">
+                  <a href="">Home</a>
+                </button>
+              </li>
+              <li>
+                <button class="productBtn navBtn">
+                  <a href="">Product</a>
+                </button>
+              </li>
+              <li>
+                <div class="searchBar">
+                  <input type="text" placeholder="Search" id="searchBar" name="search"/>
+                  <div>
+                    <button class="searchBtn">
+                      <a href="#products">
+                        <i
+                        class="fa-solid fa-magnifying-glass fa-lg"
+                        style="color: #ffffff"
+                      ></i>
+                      </a>
+                      
+                    </button>
+                  </div>
+                </div>
+              </li>
+              
+            </ul>
+          </nav>
+          <!-- NAVIGATION for mobile -->
+          <nav class="nav2">
+            <button class="burgerBtn">
+              <a href="">
+                <i class="fa-solid fa-bars fa-2xl" style="color: #c40002"></i>
+              </a>
+            </button>
+  
+            <h1 class="logoName">
+              <div>UPTOWN</div>
+              <div><span>KICKS</span> MNL</div>
+            </h1>
+  
+            <button class="searchIconBtn">
+              <a href="">
+                <i
+                  class="fa-solid fa-magnifying-glass fa-xl"
+                  style="color: #c40002"
+                ></i>
+              </a>
+            </button>
+          </nav>
+        </header>
+</div>
+
+
+<div class="bgColor">
+<div class="containerMargin2 productContainer">
+
+
+<DIV class="product1">
+
+    <div class="leftItemPage">
+        
+        
+            
+                <!-------------------------------------------  -->
+                    <div class = "product-div-left">
+                        <div class = "img-container">
+                            <img src = "image/imageShoe7/shoe1.jpg" alt = "watch">
+                            <div class="actualItem">
+                              Actual Item
+                            </div>
+                        </div>
+                        <div class = "hover-container">
+                            <div><img src = "image/imageShoe7/shoe1.jpg"></div>
+                            <div><img src = "image/imageShoe7/shoe2.jpg"></div>
+                            <div><img src = "image/imageShoe7/shoe3.jpg"></div>
+                            <div><img src = "image/imageShoe7/shoe4.jpg"></div>
+                            
+                        </div>
+                    </div>
+                    
+               
+            
+        
+
+
+        <script>
+            const allHoverImages = document.querySelectorAll('.hover-container div img');
+const imgContainer = document.querySelector('.img-container');
+
+window.addEventListener('DOMContentLoaded', () => {
+    allHoverImages[0].parentElement.classList.add('active');
+});
+
+allHoverImages.forEach((image) => {
+    image.addEventListener('mouseover', () =>{
+        imgContainer.querySelector('img').src = image.src;
+        resetActiveImg();
+        image.parentElement.classList.add('active');
+    });
+});
+
+function resetActiveImg(){
+    allHoverImages.forEach((img) => {
+        img.parentElement.classList.remove('active');
+    });
+}
+        </script>
+
+     </div>
+     <div class="rightItemPage">
+
+        <div class="shoesTag">
+
+        <!-- ------------------------------------------------- -->
+        <h1>
+            NIKE PRECISION 6 OREO
+        </h1>
+
+        <p>
+            Men's Shoes
+        </p>
+
+        <h2>
+            ₱ 2,695.00
+        </h2>
+
+        <div class="colorShoes">
+            <div>Color: </div>
+            <div class="color cirleborder shoe7Color"></div>
+        </div>
+
+        <div class="sizeShoes">
+            <div>Size:</div>
+            <div class="cirleborder size">
+                9
+            </div>
+            <div class="cirleborder size">
+                10
+            </div>
+        </div>
+
+    </div>
+
+        
+      
+
+        <div class="infoAndShipping">
+
+            <button class="sprite-product-sharing sprite-product-sharing-fm" aria-label="Share on Messenger" id="shareButton">
+                <i class="fa-brands fa-facebook-messenger" style="color: #ffffff;"></i>
+                <p>Message</p></button>
+            <script src="sentMessage.js"></script>
+
+            <div class="aboutTheshoe">
+              Striking black and white design. Precision performance for the basketball court.
+              Comfortable <br> and lightweight, these sneakers enhance agility and support movements.
+              Perfect for athletes, <br> offering style and performance in every stride.
+            </div>
+
+
+            <button class="ShippingInfoBtn" id="dropdownButton"><p>SHIPPING & PAYMENT</p>
+                <i class="fa-solid fa-caret-down" style="color: #000000;"></i>
+            </button>
+            <div id="dropdownContent">
+                <h2 class="section-title">Shipping Information</h2>
+        <p><strong>Location:</strong> Valenzuela City</p>
+
+        <h3 class="sub-section-title">Shipping Options:</h3>
+        <div class="details">
+            <p><strong>LBC / Lalamove:</strong> Shipping costs are borne by the buyer.</p>
+            <p><strong>Nationwide Shipping:</strong> Available through LBC or Lalamove.</p>
+            <p><strong>Pickup / Meetup:</strong> Available along CAMANAVA area.</p>
+        </div>
+
+        <h3 class="sub-section-title">Same-Day Metro Manila Delivery:</h3>
+        <div class="details">
+            <p><strong>Delivery Fee:</strong> ₱99</p>
+            <p><strong>Coverage:</strong> Metro Manila only</p>
+            <p><strong>Delivery Duration:</strong> 1-5 hours depending on traffic and location conditions</p>
+            <p><strong>Cutoff Time:</strong> 7:00 PM <span class="note">(Note: Orders placed after 5:00 PM may face delays due to rush hour traffic)</span></p>
+            <p><strong>Courier Services:</strong> PandaGo / Lalamove</p>
+        </div>
+
+        <h3 class="sub-section-title">Standard Delivery (Metro Manila):</h3>
+        <div class="details">
+            <p><strong>Delivery Fee:</strong> ₱49</p>
+            <p><strong>Coverage:</strong> Metro Manila only</p>
+            <p><strong>Delivery Duration:</strong> 2-3 days</p>
+            <p><strong>Cutoff Time:</strong> 7:00 PM</p>
+            <p><strong>Courier Service:</strong> GogoXpress</p>
+        </div>
+
+        <h3 class="sub-section-title">Nationwide Delivery:</h3>
+        <div class="details">
+            <p><strong>Shipping Fee:</strong> ₱99</p>
+            <p><strong>Coverage:</strong> Anywhere in the Philippines</p>
+            <p><strong>Delivery Duration:</strong> 5-7 days after pickup by courier partners (GogoXpress / LBC)</p>
+        </div>
+            </div>
+        
+            <script>
+                document.getElementById('dropdownButton').addEventListener('click', function() {
+                    const dropdownContent = document.getElementById('dropdownContent');
+                    if (dropdownContent.style.display === 'none' || dropdownContent.style.display === '') {
+                        dropdownContent.style.display = 'block';
+                    } else {
+                        dropdownContent.style.display = 'none';
+                    }
+                });
+            </script>
+
+        </div>
+     </div>
+</DIV>
+
+
+<article>
+
+  <br>
+  <h1>CUSTOMER FEEDBACK AND REVIEWS</h1>
+  <br>
+  <div class="slider">
+    <div class="slider-track">
+        <div class="slide">
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FUTKManila%2Fposts%2Fpfbid02NqsHxpfniorzLpRPBZDkwabxShfnmfbvetudvdK9KfkEww2kJ9uB59CWdL2XbpTpl&show_text=true&width=500&is_preview=true" width="500" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </div>
+        <div class="slide">
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FUTKManila%2Fposts%2Fpfbid0fA4mVCERPFdiNjheK1f7Pojsd4gBR67z6TDm51xDZ8LBHw2JnvELRvRDzNfvQT6Ul&show_text=true&width=500&is_preview=true" width="500" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </div>
+        <div class="slide">
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FUTKManila%2Fposts%2Fpfbid0TeTtQHY8GBjHTEvBrdY3d7Nqj6yn5B16Q6GE8WjREfndTPf3XqxLRCcX5S8yskdxl&show_text=true&width=500&is_preview=true" width="500" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </div>
+        <div class="slide">
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FUTKManila%2Fposts%2Fpfbid024UCKzRc5XehTF5EqRmcuSyE8jC8NrjGd8Bro5RX6MGeqTw6dLVLtQe6PKfMrChHMl&show_text=true&width=500&is_preview=true" width="500" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </div>
+        <div class="slide">
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FUTKManila%2Fposts%2Fpfbid065TkwVQfx25FKHgHhooHjJ5qPuAQskdRAdWuhRUjh3ShDyap8CbNZxNdobQAorqpl&show_text=true&width=500&is_preview=true" width="500" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </div>
+        <div class="slide">
+          <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FUTKManila%2Fposts%2Fpfbid02NqsHxpfniorzLpRPBZDkwabxShfnmfbvetudvdK9KfkEww2kJ9uB59CWdL2XbpTpl&show_text=true&width=500&is_preview=true" width="500" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+      </div>
+      <div class="slide">
+        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FUTKManila%2Fposts%2Fpfbid0fA4mVCERPFdiNjheK1f7Pojsd4gBR67z6TDm51xDZ8LBHw2JnvELRvRDzNfvQT6Ul&show_text=true&width=500&is_preview=true" width="500" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+    </div>
+    </div>
+</div>
+<script>
+
+// script.js
+const track = document.querySelector('.carousel-track');
+let items = document.querySelectorAll('.carousel-item');
+const itemWidth = items[0].offsetWidth + 30; // iframe width + gap
+let currentIndex = 0;
+
+function moveCarousel() {
+    currentIndex++;
+    if (currentIndex >= items.length) {
+        track.appendChild(items[0]);
+        items = document.querySelectorAll('.carousel-item');
+        currentIndex = 0;
+    }
+    track.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+}
+
+setInterval(moveCarousel, 3000); // Change slide every 3 seconds
+
+track.addEventListener('transitionend', () => {
+    if (currentIndex === 0) {
+        track.style.transition = 'none';
+        track.style.transform = `translateX(0)`;
+        setTimeout(() => {
+            track.style.transition = 'transform 0.5s ease-in-out';
+        });
+    }
+});
+
+
+
+</script>
+
+<br><br>
+</article>
+
+
+
+
+     
+</div>
+</div>
+
+
+<div class="bgColor locationCon" >
+  <section class="locationAndSocialMedia" >
+
+    <H1>CONTACT US</H1>
+
+      <div class="containerMargin containermapSocial">
+        
+        
+        <div class="leftItemPage leftMap">
+
+          <div class="map-container">
+            <iframe class="mapIframe" src="https://maps.google.com/maps?width=720&amp;height=600&amp;hl=en&amp;q=4037%20Lychees,%20E.%20Bernandino,%20Valenzuela,%201440%20Metro%20Manila+(Uptown%20Kicks%20MNL)&amp;t=&amp;z=19&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+          
+
+        </div>
+        <div class="rightItemPage rightSocials">
+        
+        <div class="emailCon">
+        <h3>Customer Inquiries</h3>
+        <a href="support@uptownkicksmnl.com">support@uptownkicksmnl.com</a>
+      
+
+<br><br class="br"><br class="br">
+
+      <div>
+        <h3>Follow us</h3>
+        <button class="facebookBtn">
+          
+          <i class="fa-brands fa-facebook fa-xl" style="color: #ffffff;"></i>
+          <p>FACEBOOK</p>
+        </button>
+
+      </div>
+
+
+<br><br class="br"><br class="br">
+
+      <div class="CpNumCon">
+        <h3>Cellphone number</h3>
+        <div class="numCon">
+        <i class="fa-solid fa-phone fa-2xl" style="color: #949494;"></i> <p>0921 698 3676</p>
+      </div>
+      </div>
+
+
+    </div>
+  </div>
+      </div>
+  </section>
+  </div>
+
+  <footer>
+    <p>2024, Uptown Kicks MNL. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

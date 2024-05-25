@@ -1,369 +1,508 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="logoIcon.png" />
+
     <title>Uptown Kicks MNL</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" href="homepage.css">
-    <link rel="stylesheet" href="style/productpage.css">
-    <link rel="stylesheet" href="mediaQueries/mediaMobileFirst.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="searchEngine.js" />
+    <link rel="stylesheet" href="homepage.css" />
+    <link rel="stylesheet" href="style/productpage.css" />
+    <link rel="stylesheet" href="mediaQueries/mediaMobileFirst.css" />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
 
+    <meta property="og:title" content="UPTOWN KICKS MNL" />
+    <meta
+      property="og:description"
+      content="We Sell Legit/Original Sneakers at a budget friendly. All Items posted are below Srp!"
+    />
+    <meta property="og:image" content="thumbnail.jpg" />
+    <meta property="og:url" content="https://uptownkickmnl.store/Home/" />
+    <meta property="og:type" content="website" />
+  </head>
 
-<meta property="og:title" content="UPTOWN KICKS MNL">
-    <meta property="og:description" content="We Sell Legit/Original Sneakers at a budget friendly. All Items posted are below Srp!">
-    <meta property="og:image" content="thumbnail.jpg">
-    <meta property="og:url" content="https://uptownkickmnl.store/Home/">
-    <meta property="og:type" content="website">
-
-</head>
-
-
-
-
-<body>
-    <div class="containerMargin">
-       <header>
+  <body>
+    <div class="containerMargin2">
+      <header>
         <!-- NAVIGATION DESKTOP -->
         <nav class="nav1">
-            
-            <h1 class="logoName">
-                <div>
-                UPTOWN 
-            </div>
-                <div><span>KICKS</span> MNL</div>
-            </h1>
+          <h1 class="logoName">
+            <div>UPTOWN</div>
+            <div><span>KICKS</span> MNL</div>
+          </h1>
 
-            <ul class="navigations">
-                <li>
-                    <button class="homeBtn navBtn">
-                        <a href="">Home</a>
-                    </button>
-                </li>
-                <li>
-                    <Button class="productBtn navBtn">
-                    <a href="">Product</a>
-                </Button></li>
-                <li>
-                    <div class="searchBar">
-                    <input type="text" placeholder="Search">
-                    <div>
-                        <button class="searchBtn">
-                            <i class="fa-solid fa-magnifying-glass fa-lg" style="color: #ffffff;"></i>
-                        </button>
-                    </div>
+          <ul class="navigations">
+            <li>
+              <button class="homeBtn navBtn">
+                <a href="index.html">Home</a>
+              </button>
+            </li>
+            <li>
+              <button class="productBtn navBtn">
+                <a href="#products">Product</a>
+              </button>
+            </li>
+            <li>
+              <div class="searchBar">
+                <input
+                  type="text"
+                  placeholder="Search"
+                  id="searchBar"
+                  name="search"
+                />
+                <div>
+                  <button class="searchBtn">
+                    <a href="#products">
+                      <i
+                        class="fa-solid fa-magnifying-glass fa-lg"
+                        style="color: #ffffff"
+                      ></i>
+                    </a>
+                  </button>
                 </div>
-                </li>
-                <li><button class="signInBtn navBtn">
-                    <a href="">Sign In</a>
-                </button></li>
-            </ul>
+              </div>
+            </li>
+          </ul>
         </nav>
-<!-- NAVIGATION for mobile -->
+        <!-- NAVIGATION for mobile -->
         <nav class="nav2">
-            <button class="burgerBtn">
-                <a href="">
-                    <i class="fa-solid fa-bars fa-2xl" style="color: #c40002;"></i>
-                </a>
-            </button>
+          <button class="burgerBtn">
+            <a href="">
+              <i class="fa-solid fa-bars fa-2xl" style="color: #c40002"></i>
+            </a>
+          </button>
 
-            <h1 class="logoName">
-                <div>
-                UPTOWN 
-            </div>
-                <div>
-                    <span>KICKS</span> MNL
-                </div>
-            </h1>
+          <h1 class="logoName">
+            <div>UPTOWN</div>
+            <div><span>KICKS</span> MNL</div>
+          </h1>
 
-            <button class="searchIconBtn">
-                <a href="">
-                    <i class="fa-solid fa-magnifying-glass fa-xl" style="color: #c40002;"></i>
-                </a>
-            </button>
+          <button class="searchIconBtn">
+            <a href="">
+              <i
+                class="fa-solid fa-magnifying-glass fa-xl"
+                style="color: #c40002"
+              ></i>
+            </a>
+          </button>
         </nav>
-       </header>
+      </header>
 
-       <BR>
-<!-- desktop -->
-       <figure class="newReleasePage">
-        <div class="leftSide">
-            <h1>Nike SB Alleyoop</h1>
-            <br>
-            <button class="buyNowBtn">
-                Buy Now
-            </button>
-        </div>
-
-        <div class="rightSide">
-            <img src="img/newrealseshoe.png" alt="">
-        </div>
-       </figure>
-<!-- mobile -->
-       <figure class="newReleasePage2">
-        <div class="top">
-            <h1>Nike SB Alleyoop</h1>
-        </div>
-        <div class="bottom">
-            <img src="img/newrealseshoe.png" alt="">
-            <button class="buyNowBtn">
-                Buy Now
-            </button>
-        </div>
-       </figure>
+      <br />
+      <!-- desktop -->
     </div>
 
+
+
+
+
+    <div class="coverHeader">
+      <div class="coverLeft">
+        <div class="coverleftTxt">
+        <h5>EXPLORE OUR SHOP</h5>
+        <h1>Our Products</h1>
+      </div>
+
+      </div>
+      <div class="coverRight">
+        <div>
+          picright
+        </div>
+      </div>
+    </div>
+
+
+
+
+
     <div class="containerMargin2">
-        <section>
+      <section class="products" id="products">
+        <main>
+          <p class="noResult">No results found.</p>
 
-            <main>
+          <div class="filterBtnMobile">
+            <button>
+              <i class="fa-solid fa-bars fa-lg" style="color: #ffffff"></i>
+              <p>FILTER AND SORT</p>
+            </button>
+          </div>
 
-                <div class="filterBtnMobile">
-                    <button>
-                        <i class="fa-solid fa-bars fa-lg" style="color: #ffffff;"></i>
-                        <p>FILTER AND SORT</p>
+          <div class="inStock">
+          <figure class="firstRow rowShoes">
+            <div class="shoe1Con shoeCon">
+              <a href="product1.html">
+                <button class="shoesBtn">
+                  <div class="thumnailShoes">
+                    <div class="picshoe1 picshoes"></div>
+                  </div>
+
+                  <div class="infoShoes">
+                    <h2 class="titleShoes">Nike Court Vision Mid</h2>
+                    <p class="rateShoes">★★★★★</p>
+
+                    <p class="priceShoes">₱ 2,399.00</p>
+                  </div>
                 </button>
+              </a>
             </div>
-                <figure class="firstRow rowShoes">
-                    <button>
-                        <div class="thumnailShoes">
-                            <div class="picshoe1 picshoes">
-                    
-                            </div>
-                        </div>
 
-                        <div class="infoShoes">
-                        <h2 class="titleShoes">
-                            Nike Court Vision Mid
-                        </h2>
-                        <p class="rateShoes">
-                            ★★★★★
-                        </p>
+            <div class="shoe2Con shoeCon">
+              <a href="product2.html">
+                <button>
+                  <div class="thumnailShoes">
+                    <div class="picshoe2 picshoes"></div>
+                  </div>
 
-                        <p class="priceShoes">
-                            ₱ 2,195.00
-                        </p>
+                  <div class="infoShoes">
+                    <h2 class="titleShoes">Nike Ebernon Chicago</h2>
+                    <p class="rateShoes">★★★★★</p>
 
-                    </div>
-
-                    </button>
-                    <button>
-                        <div class="thumnailShoes">
-                            <div class="picshoe2 picshoes">
-                                
-                            </div>
-                        </div>
-
-                        <div class="infoShoes">
-                        <h2 class="titleShoes">
-                            Nike Ebernon Chicago
-                        </h2>
-                        <p class="rateShoes">
-                            ★★★★★
-                        </p>
-
-                        <p class="priceShoes">
-                            ₱ 2,195.00
-                        </p>
-
-                    </div>
-                    </button>
-                    <button>
-                        <div class="thumnailShoes">
-                            <div class="picshoe3 picshoes">
-                                
-                            </div>
-                        </div>
-
-                        <div class="infoShoes">
-                        <h2 class="titleShoes">
-                            Nike Court Legacy
-                        </h2>
-                        <p class="rateShoes">
-                            ★★★★★
-                        </p>
-
-                        <p class="priceShoes">
-                            ₱ 2,195.00
-                        </p>
-
-                    </div>
-                    </button>
-                    <button>
-                        <div class="thumnailShoes">
-                            <div class="picshoe4 picshoes">
-                                
-                            </div>
-                        </div>
-
-                        <div class="infoShoes">
-                        <h2 class="titleShoes">
-                            Nike Ebernon White
-                        </h2>
-                        <p class="rateShoes">
-                            ★★★★★
-                        </p>
-
-                        <p class="priceShoes">
-                            ₱ 2,195.00
-                        </p>
-
-                    </div>
-                    </button>
-                </figure>
-
-                <figure class="secondRow rowShoes">
-                    <button>
-                        <div class="thumnailShoes">
-                            <div class="picshoe5 picshoes">
-                                
-                            </div>
-                        </div>
-
-                        <div class="infoShoes">
-                        <h2 class="titleShoes">
-                            Nike Ebernon Panda
-                        </h2>
-                        <p class="rateShoes">
-                            ★★★★★
-                        </p>
-
-                        <p class="priceShoes">
-                            ₱ 2,195.00
-                        </p>
-
-                    </div>
-                    </button>
-                    <button>
-                        <div class="thumnailShoes">
-                            <div class="picshoe6 picshoes">
-                                
-                            </div>
-                        </div>
-
-                        <div class="infoShoes">
-                        <h2 class="titleShoes">
-                           Nike KD Trey 5
-                        </h2>
-                        <p class="rateShoes">
-                            ★★★★★
-                        </p>
-
-                        <p class="priceShoes">
-                            ₱ 2,195.00
-                        </p>
-
-                    </div>
-                    </button>
-                    <button>
-                        <div class="thumnailShoes">
-                            <div class="picshoe7 picshoes">
-                                
-                            </div>
-                        </div>
-
-                        <div class="infoShoes">
-                        <h2 class="titleShoes">
-                            Nike Precision 6 Oreo
-                        </h2>
-                        <p class="rateShoes">
-                            ★★★★★
-                        </p>
-
-                        <p class="priceShoes">
-                            ₱ 2,195.00
-                        </p>
-
-                    </div>
-                    </button>
-                    <button>
-                        <div class="thumnailShoes">
-                            <div class="picshoe8 picshoes">
-                                
-                            </div>
-                        </div>
-
-                        <div class="infoShoes">
-                        <h2 class="titleShoes">
-                            Nike Precision 6 
-                        </h2>
-                        <p class="rateShoes">
-                            ★★★★★
-                        </p>
-
-                        <p class="priceShoes">
-                            ₱ 2,195.00
-                        </p>
-
-                    </div>
-                    </button>
-                </figure>
-                
-            </main>
-            <aside class="filterAndSortSide">
-                <h1>This section is under development :) ⚠️
-
-                </h1>
-            </aside>
-        </section>
-    </div>
-
-    <div class="containerMargin2">
-
-        <!-- moreInfo page -->
-        <aside class="moreInfoPageforDesktop">
-
-            <div class="moreInfotextContainer">
-            <div class="more moreInfotext">
-                <h5>MORE</h5>
-                <br>
-                <a href="">Where to Buy</a>
-                <a href="">Contact Us</a>
-                <a href="">Privacy Policy</a>
-                <a href="">Blogs & News Updates</a>
-                <a href="">About Uptown Kicks</a>
-
+                    <p class="priceShoes">₱ 2,399.00</p>
+                  </div>
+                </button>
+              </a>
             </div>
-            <div class="explore moreInfotext">
-                <h5>EXPLORE</h5>
-                <br>
-                <a href="">Search</a>
-                <a href="">Shop</a>
-                <a href="">FAQ</a>
+
+            <div class="shoe3Con">
+              <a href="product3.html">
+                <button>
+                  <div class="thumnailShoes">
+                    <div class="picshoe3 picshoes"></div>
+                  </div>
+
+                  <div class="infoShoes">
+                    <h2 class="titleShoes">Nike Court Legacy</h2>
+                    <p class="rateShoes">★★★★★</p>
+
+                    <p class="priceShoes">₱ 1,495.00</p>
+                  </div>
+                </button>
+              </a>
             </div>
+
+            <div class="shoe4Con">
+              <a href="product4.html">
+                <button>
+                  <div class="thumnailShoes">
+                    <div class="picshoe4 picshoes"></div>
+                  </div>
+
+                  <div class="infoShoes">
+                    <h2 class="titleShoes">Nike Ebernon White</h2>
+                    <p class="rateShoes">★★★★★</p>
+
+                    <p class="priceShoes">₱ 2,499.00</p>
+                  </div>
+                </button>
+              </a>
+            </div>
+
+            <div class="shoe5Con">
+              <a href="product5.html">
+                <button>
+                  <div class="thumnailShoes">
+                    <div class="picshoe5 picshoes"></div>
+                  </div>
+
+                  <div class="infoShoes">
+                    <h2 class="titleShoes">Nike Ebernon Panda</h2>
+                    <p class="rateShoes">★★★★★</p>
+
+                    <p class="priceShoes">₱ 2,499.00</p>
+                  </div>
+                </button>
+              </a>
+            </div>
+
+            <div class="shoe6Con">
+              <a href="product6.html">
+                <button>
+                  <div class="thumnailShoes">
+                    <div class="picshoe6 picshoes"></div>
+                  </div>
+
+                  <div class="infoShoes">
+                    <h2 class="titleShoes">Nike KD Trey 5</h2>
+                    <p class="rateShoes">★★★★★</p>
+
+                    <p class="priceShoes">₱ 1,995.00</p>
+                  </div>
+                </button>
+              </a>
+            </div>
+
+            <div class="shoe7Con">
+              <a href="product7.html">
+                <button>
+                  <div class="thumnailShoes">
+                    <div class="picshoe7 picshoes"></div>
+                  </div>
+
+                  <div class="infoShoes">
+                    <h2 class="titleShoes">Nike Precision 6 Oreo</h2>
+                    <p class="rateShoes">★★★★★</p>
+
+                    <p class="priceShoes">₱ 2,695.00</p>
+                  </div>
+                </button>
+              </a>
+            </div>
+
+            <div class="shoe8Con">
+              <a href="product8.html">
+                <button>
+                  <div class="thumnailShoes">
+                    <div class="picshoe8 picshoes"></div>
+                  </div>
+
+                  <div class="infoShoes">
+                    <h2 class="titleShoes">Nike Precision 6</h2>
+                    <p class="rateShoes">★★★★★</p>
+
+                    <p class="priceShoes">₱ 2,399.00</p>
+                  </div>
+                </button>
+              </a>
+            </div>
+          </figure>
         </div>
-            
-            <div class="brandNameLogo">
-                <div>
-                   
-                </div>
+
+
+        <!-- out of stock -->
+          <div class="outOfStock">
+          <figure class="firstRow rowShoes ">
+            <div class="shoe8Con">
+              <a href="product8.html">
+                <button>
+                  <div class="thumnailShoes">
+                    <div class="picshoe8 picshoes"></div>
+                  </div>
+
+                  <div class="infoShoes">
+                    <h2 class="titleShoes">Nike Precision 6</h2>
+                    <p class="rateShoes">★★★★★</p>
+
+                    <p class="priceShoes">₱ 2,399.00</p>
+                  </div>
+                </button>
+              </a>
             </div>
+          </figure>
+        </div>
+
+
+        </main>
+        <aside class="filterAndSortSide">
+          <h4>Availability </h4>
+          <div class="filterButtons">
+            <button id="inStockBtn" class="filterBtn active">IN STOCK</button>
+            <button id="outOfStockBtn" class="filterBtn">OUT OF STOCK</button>
+          </div>
+
+          <h4>Price </h4>
+            <div class="priceFilters">
+              <button class="filterBtn resetpriceBtn" id="priceReset">Reset</button>
+              <button class="filterBtn" id="price0-500">0-500</button>
+              <button class="filterBtn" id="price500-1000">500-1,000</button>
+              <button class="filterBtn" id="price1000-1500">1,000-1,500</button>
+              <button class="filterBtn" id="price1500-2000">1,500-2,000</button>
+              <button class="filterBtn" id="price2000-2500">2,000-2,500</button>
+              <button class="filterBtn" id="price2500-3000">2,500-3,000</button>
+              <button class="filterBtn" id="priceOver3000">Over 3,000</button>
+            </div>
+          
+
+
+
+
+
         </aside>
+      </section>
     </div>
-        
-    <aside class="moreInfoPageforMobile">
-        <button><p>
-            MORE
-        </p>
-        <i class="fa-solid fa-chevron-down fa-lg" style="color: #000000;"></i>
-    </button>
-        <button><p>
-            EXPLORE
-        </p>
-        <i class="fa-solid fa-chevron-down fa-lg" style="color: #000000;"></i>
-    </button>
-        
-    </aside>
+
     
-    <footer>
-        <p>
-            2024, Uptown Kicks MNL. All rights reserved.
-        </p>
-    </footer>
-</body>
-</html>
+
+      <div class="usefulLinksContainer">
+
+        <div class="containerMargin2">
+          <div class="loc_Call_Mail">
+            <div class="location infoCon">
+              <i class="fa-solid fa-location-dot fa-2xl customSizeIconFooter"></i>
+    
+              <div class="infotxtCon">
+                <h5>Find us</h5>
+                <p>4037 lychee street GTDL Valenzuela City</p>
+              </div>
+            </div>
+    
+            <div class="call infoCon">
+    
+              <i class="fa-solid fa-phone-flip fa-2xl customSizeIconFooter"></i>
+    
+              <div class="infotxtCon">
+                <h5>Call us</h5>
+                <p>09216983676</p>
+              </div>
+            </div>
+    
+    
+    
+    
+            <div class="email infoCon">
+              <i class="fa-solid fa-envelope fa-2xl customSizeIconFooter"></i>
+    
+              <div class="infotxtCon">
+                <h5>Mail us</h5>
+                <p>uptownkicksmnl@gmail.com</p>
+              </div>
+              
+            </div>
+          </div>
+
+
+
+
+
+          <div class="footerContainer">
+            <div class="footBrandname">
+              <div></div>
+              <p>
+                Welcome to UPTOWN KICKS MNL, 
+                where style meets performance. 
+                Our premium sportswear combines 
+                innovation, quality materials, 
+                and ethical practices for athletes
+                who demand the best.
+              </p>
+            </div>
+    
+            <div class="useFulLinks">
+              <H5>Useful Links</H5>
+              <div class="linksList">
+                <a href="">Search</a>
+                <a href="">Product</a>
+                <a href="about.html">About Us</a>
+                <a href="">Privacy Policy</a>
+                <a href="">FAQ</a>
+              </div>
+              
+            </div>
+    
+            <div class="followUs">
+              <H5>Follow us</H5>
+              <div class="socialList">
+                <button class="social facebook"><i class="fa-brands fa-facebook fa-2xl" style="color: #ffffff;"></i></button>
+                <button class="social instagram"><i class="fa-brands fa-instagram fa-2xl" style="color: #ffffff;"></i></button>
+                <button class="social google"> <i class="fa-brands fa-google-plus fa-2xl" style="color: #ffffff;"></i></button>
+              </div>
+
+
+
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+        <footer>
+          <div class="containerMargin2">
+            <div class="creditFooter">
+            <p>Copyright © 2024, All Right Reserved <Span class="brandnameFooter">
+              UPTOWN KICKS MNL</Span></p>
+
+              <button id="creditButton" class="creditlink">Credited</button>
+          </div>
+          </div>
+          
+        </footer>
+    
+        
+
+
+
+
+<!-- credits pages -->
+
+
+
+<div id="creditsContainer" class="creditsContainer">
+  <div id="exitCredit" class="exitCredit">
+    <button id="exitButton">Exit</button>
+  </div>
+  <div class="devList">
+    <div class="AGUSTIN devs">
+      <div></div>
+
+      <h1>JOHN LENNARD AGUSTIN</h1>
+      <p>ako lang po yung gumawa ng websiteHAHAHAHAH</p>
+
+    </div>
+    <div class="DELEON devs">
+      <div></div>
+
+      <h1>DIANA RAFAELA DE LEON</h1>
+      <p>panay utos</p>
+
+    </div>
+    <div class="NACUA devs">
+      <div></div>
+
+      <h1>RAND BENNETT NACUA</h1>
+      <p>"napepressure ako bai"</p>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+<script src="searchEngine.js"></script>
+      </body>
+    </html>
+      </div>
+
+
+
+
+
+    
+
+    <!-- <aside class="moreInfoPageforMobile">
+      <button>
+        <p>MORE</p>
+        <i class="fa-solid fa-chevron-down fa-lg" style="color: #000000"></i>
+      </button>
+      <button>
+        <p>EXPLORE</p>
+        <i class="fa-solid fa-chevron-down fa-lg" style="color: #000000"></i>
+      </button>
+    </aside> -->
+
+    
