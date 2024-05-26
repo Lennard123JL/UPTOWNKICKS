@@ -155,7 +155,32 @@ nav {
 .searchBtn:hover {
   background-color: #772020; /* Change background color */
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+
 }
+
+
+.suggestions {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  background-color: #fff;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: none;
+  z-index: 1000;
+}
+
+.suggestions li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.suggestions li:hover {
+  background-color: #f0f0f0;
+}
+
 
 .logoName {
   font-size: 30px;
@@ -1410,6 +1435,53 @@ devInfo{
 .aboutText {
 }
 
+
+
+/* PRIVACY AND POLiCY page--------------------------------- */
+
+.aboutContainer{
+  /* background-color: #dd0044; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+.aboutContainer article{
+  /* background-color: #3b5998; */
+  height: 100%;
+  max-width: 900px;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.privacyBrandlogo{
+  /* background-color: #2ded0b; */
+  background-image: url(image/websiteImageAssets/jpeg-optimizer_brandlogo.png);
+  background-size: cover;
+  height: 200px;
+  width: 400px;
+}
+
+.privacyTitle{
+
+  color: black;
+  background-color: #2ded0b00;
+
+}
+.privacyText{
+  font-family: "Rubik", sans-serif;
+  font-weight: 100;
+  color: #3f3f3f;
+  font-size: 20px;
+}
+
+
+
 /* mediaqueries------------------------------------------------------- */
 
 @media (max-width: 2560px) {
@@ -1587,6 +1659,11 @@ devInfo{
   }
   .nav1 {
     display: none;
+    
+  }
+  .navpage1{
+    display: flex;
+    justify-content: space-between;
   }
   .nav2 {
     display: flex;
@@ -2161,7 +2238,7 @@ devInfo{
 
 
 
-.containerMargin2 {
+/* .containerMargin2 {
   animation: slideInBottomToTop 2s ease forwards;
   opacity: 0;
 }
@@ -2182,7 +2259,11 @@ devInfo{
 .creditsContainer{
   animation: slideInBottomToTop 1s ease forwards;
   opacity: 0;  
-}
+} */
+
+
+
+
 
 
 

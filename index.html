@@ -337,7 +337,7 @@
       
 
         <div class="containerMargin2 footermargin">
-          <div class="loc_Call_Mail">
+          <div class="loc_Call_Mail">_+
             <div class="location infoCon">
               <i class="fa-solid fa-location-dot fa-2xl customSizeIconFooter"></i>
     
@@ -391,11 +391,11 @@
             <div class="useFulLinks">
               <H5>Useful Links</H5>
               <div class="linksList">
-                <a href="">Search</a>
-                <a href="">Product</a>
+                <a href="index.html">Search</a>
+                <a href="index.html#product">Product</a>
                 <a href="about.html">About Us</a>
-                <a href="">Privacy Policy</a>
-                <a href="">FAQ</a>
+                <a href="privacy_policy.html">Privacy Policy</a>
+                <a href="faq.html">FAQ</a>
               </div>
               
             </div>
@@ -492,6 +492,20 @@
 
 
 <script src="searchEngine.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    if (window.location.hash === "#products") {
+      const productsSection = document.getElementById("products");
+      if (productsSection) {
+        productsSection.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  });
+</script>
+
+
+
+
       </body>
     </html>
       </div>
