@@ -10,6 +10,8 @@
 
 html {
   scroll-behavior: smooth;
+
+  
 }
 
 body {
@@ -18,13 +20,17 @@ body {
   align-items: center;
   flex-direction: column;
   gap: 30px;
+  
   position: relative;
+  overflow-x: hidden;
 }
 /* HEADER */
 nav {
   display: flex;
   justify-content: space-between;
 }
+
+
 
 .navigations {
   display: flex;
@@ -247,6 +253,13 @@ nav {
 }
 
 /* --------------------------cover */
+
+.coverContainer{
+  margin-left: 0px;
+  margin-right: 0px;
+  width: 900px;
+}
+
 
 .coverHeader {
   background-color: #c40002;
@@ -1022,7 +1035,7 @@ article h1 {
 /* --------------------------------------INFO FOOTER */
 
 .loc_Call_Mail {
-  /* background-color: #C40002; */
+  /* background-color: #cf5759; */
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
@@ -1060,7 +1073,7 @@ article h1 {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  width: 100%;
+  width:100%;
   align-items: center;
 }
 
@@ -1072,6 +1085,14 @@ article h1 {
   padding-left: 200px;
   padding-right: 200px;
   gap: 120px;
+}
+
+.footermargin{
+  /* background-color: #3b5998; */
+  width: 42px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .footBrandname {
@@ -1170,7 +1191,8 @@ article h1 {
 /* footer --------------------------------------------------------------------*/
 
 footer {
-  background-color: #3f3e3e;
+  /* background-color: #3f3e3e; */
+  border-top: 1px solid #9a9a9a;
   width: 100%;
   height: 60px;
   display: flex;
@@ -1215,7 +1237,8 @@ footer p {
   height: 100%;
   top: 0;
   left: 0;
-  display: none;
+  height: 100vh;
+  /* display: none; */
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -1262,12 +1285,22 @@ footer p {
   border: 1px solid #000;
 }
 
+devInfo{
+  background-color: #000;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 .devs h1 {
   color: white;
+  font-size: 50px;
 }
 
 .devs p {
   color: rgb(180, 180, 180);
+  font-family: "Outfit", sans-serif;
 }
 
 .AGUSTIN div {
@@ -1288,7 +1321,8 @@ footer p {
   background-color: #dd0044;
   height: 370px;
   width: 370px;
-  border-radius: 1900px;
+  border: 9px solid white;
+  border-radius: 50%;
 }
 
 /* --------------------------------------mediaQueries */
@@ -1311,8 +1345,10 @@ footer p {
   padding-right: 0.5rem;
   max-width: 1536px;
 
-  /* border: 2px solid rgb(240, 7, 57); */
+  border: 2px solid rgb(240, 7, 57);
   gap: 20px;
+
+  
 }
 /* ABOUT PAGE---------------------------------------------------------------- */
 
@@ -1387,6 +1423,11 @@ footer p {
     width: 640px;
     background-position: -10px;
   }
+
+  .devs{
+    width: 680px;
+  height: 700px;
+  }
 }
 
 @media (max-width: 1440px) {
@@ -1415,6 +1456,23 @@ footer p {
 
   .picshoes {
     height: 80px;
+  }
+
+
+  .devs{
+    width: 380px;
+  height: 500px;
+  }
+
+  .devs h1 { font-size: 30px;}
+
+  .devs div{
+    height: 280px;
+  width: 280px;
+  border: 4px solid white;
+  }
+  .devs p{
+    font-size: 10px;
   }
 }
 @media (max-width: 1024px) {
@@ -1488,6 +1546,22 @@ footer p {
     padding-left: 0px;
     padding-right: 0px;
   }
+
+  .devs{
+    width: 280px;
+  height: 300px;
+  }
+
+  .devs h1 { font-size: 26px;}
+
+  .devs div{
+    height: 100px;
+  width: 100px;
+  border: 2px solid white;
+  }
+  .devs p{
+    font-size: 10px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1537,7 +1611,7 @@ footer p {
     font-size: 15px;
   }
   .filterAndSortSide {
-    /* display: none; */
+    display: none;
   }
 
   main {
@@ -1761,6 +1835,36 @@ footer p {
   .followUs {
     text-align: center;
   }
+
+  .devs{
+    width: 580px;
+  height: 300px;
+  background-color: #353535;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: 0px solid #000;
+
+  flex-direction: row;
+  justify-content: flex-start;
+  }
+devInfo{
+  text-align: start;
+}
+  .devs h1 { font-size: 26px;}
+
+  .devs div{
+    height: 140px;
+  width: 140px;
+  border-radius: 10px;
+  border: 2px solid white;
+  }
+  .devs p{
+    font-size: 10px;
+  }
+
+  .devList{
+    flex-direction: column;
+    gap: 10px;
+  }
 }
 
 @media (max-width: 425px) {
@@ -1827,10 +1931,55 @@ footer p {
     flex-direction: column;
   }
 
-  .coverRight div {
-    background-color: #010101;
-    height: 300px;
+  .loc_Call_Mail{
+    /* padding-left: 0px;
+  padding-right: 0px; */
+  /* display: none; */
     width: 300px;
+  padding-left: 0px;
+  padding-right: 0px;
+  }
+
+  .useFulLinks{
+    /* display: none; */
+    padding-left: 0px;
+  padding-right: 0px;
+  }
+  .followUs{
+    /* display: none; */
+    padding-left: 0px;
+  padding-right: 0px;
+  }
+
+  .footBrandname{
+    /* display: none; */
+    justify-content: center;
+    align-items: center;
+  }
+
+  .coverRight div {
+    background-color: #000000;
+    height: 300px;
+    max-width: 100%;
+  }
+
+  .footBrandname div {
+    width: 310px;
+    height: 90px;
+    
+  }
+  .footBrandname p {
+    font-size: 12px;
+    background-color: #772020;
+    width: 300px;
+  }
+
+  .usefulLinksContainer{
+  display: flex;
+  }
+
+  .creditFooter p{
+    font-size: 9px;
   }
 }
 @media (max-width: 375px) {
@@ -1899,6 +2048,7 @@ footer p {
   .footBrandname div {
     width: 310px;
     height: 90px;
+    
   }
 }
 @media (max-width: 320px) {
@@ -1931,3 +2081,44 @@ footer p {
     width: 100%;
   }
 }
+
+
+
+
+
+
+
+
+
+/* animations----------------- */
+
+
+
+.containerMargin2 {
+  animation: slideInBottomToTop 2s ease forwards;
+  opacity: 0;
+}
+
+@keyframes slideInBottomToTop {
+  from {
+      opacity: 0;
+      transform: translateY(100%);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+
+
+.creditsContainer{
+  animation: slideInBottomToTop 1s ease forwards;
+  opacity: 0;  
+}
+
+
+
+
+
+
