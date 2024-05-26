@@ -1378,7 +1378,7 @@ devInfo{
   padding-right: 0.5rem;
   max-width: 1536px;
 
-  border: 2px solid rgb(240, 7, 57);
+  /* border: 2px solid rgb(240, 7, 57); */
   gap: 20px;
 
   
