@@ -314,7 +314,7 @@ section {
   height: 750px;
 }
 main {
-  /* background-color: #d9d9d9; */
+  /* background-color: #0fffc3; */
   border-width: 2px 0px 3px 0px;
   border-color: #d2d2d2;
   border-style: solid;
@@ -338,8 +338,12 @@ main {
 
 .products {
   height: 100%;
-  /* background-color: #d9d9d9; */
+  /* background-color: #5d2727; */
   min-height: 300px;
+  
+  
+  
+  
 }
 
 .filterAndSortSide {
@@ -1067,6 +1071,10 @@ article h1 {
   color: #939393;
 }
 
+.footermargin{
+  background-color: #1e1e1e;
+}
+
 .usefulLinksContainer {
   background-color: #1e1e1e;
   gap: 50px;
@@ -1345,7 +1353,7 @@ devInfo{
   padding-right: 0.5rem;
   max-width: 1536px;
 
-  /* border: 2px solid rgb(240, 7, 57); */
+  border: 2px solid rgb(240, 7, 57);
   gap: 20px;
 
   
@@ -1611,11 +1619,27 @@ devInfo{
     font-size: 15px;
   }
   .filterAndSortSide {
-    display: none;
+    /* display: none; */
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    /* background-color: #3b5998; */
+    
+  }
+
+  .products{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    /* background-color: blueviolet; */
+    align-items: center;
+
   }
 
   main {
     gap: 10px;
+    /* background-color: #000; */
+    width: 300px;
   }
 
   .rowShoes {
@@ -1810,6 +1834,7 @@ devInfo{
   }
 
   .loc_Call_Mail {
+    
     flex-direction: column;
     gap: 50px;
   }
@@ -1822,6 +1847,7 @@ devInfo{
     flex-direction: column;
     gap: 10px;
     align-items: center;
+    
   }
 
   .footBrandname {
@@ -1864,6 +1890,19 @@ devInfo{
   .devList{
     flex-direction: column;
     gap: 10px;
+  }
+  .creditlink{
+    width: 50px;
+    font-size: 1px;
+  }
+
+  .creditFooter p,.brandnameFooter{
+    font-size: 5px;
+  }
+  footer{
+    /* background-color: #000;
+    border-width: 0px; */
+    width: 100%;
   }
 }
 
@@ -1970,7 +2009,7 @@ devInfo{
   }
   .footBrandname p {
     font-size: 12px;
-    background-color: #772020;
+    /* background-color: #772020; */
     width: 300px;
   }
 
@@ -1981,6 +2020,25 @@ devInfo{
   .creditFooter p{
     font-size: 9px;
   }
+
+  .creditlink{
+    width: 50px;
+  }
+
+  footer{
+    /* background-color: #0fffc3; */
+    /* background-color: #000;
+    border-width: 0px; */
+    width: 350px;
+  }
+
+  .loc_Call_Mail{
+    width: 100%;
+    
+  }
+
+  
+
 }
 @media (max-width: 375px) {
   .containerMargin {
@@ -2046,10 +2104,19 @@ devInfo{
   }
 
   .footBrandname div {
-    width: 310px;
+    width: 300px;
     height: 90px;
+    /* background-color: #0fffc3; */
     
   }
+
+  footer{
+    /* background-color: #000;
+    border-width: 0px; */
+    width: 300px;
+  }
+
+  
 }
 @media (max-width: 320px) {
   .containerMargin {
